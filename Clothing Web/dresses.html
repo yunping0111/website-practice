@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dresses - HYP Clothing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    <div class = "shopname">
+        <h1> Ghost Shopping </h1>
+    </div>
+   
+    
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="ghost_icon.png">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a  href="index.html">HOME</a></li>
+                    <li><a href="#tops">TOPS</a></li>
+                    <li><a href="#bottoms">BOTTOMS</a></li>
+                    <li><a class="active" href="#dresses">DRESSES</a></li>
+                    <li><a href="#about">ABOUT</a> </li>
+                </ul>
+            </nav>
+            <img src="pic/cart.png" width="40px" height="40px">
+            <img src="pic/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    <!-------feature categories -------->
+    <div class = "clothes-categories">
+        <div class="small-container">
+            
+            <div class ="row row-2">
+                <h1 style="padding: 10px 100px;"> Dresses</h1>
+                <select>
+                    <option> Default</option>
+                    <option> Price Down</option>
+                    <option> Price Up</option>
+                    <option> Sales Up</option>
+                    <option> Sales Down</option>
+                </select>
+            </div>
+            <div class = "row">
+                <div class="col-3">
+                    <img src="pic/street-1.jpg">
+                    <p> $12000</p>
+                </div>
+                <div class="col-3">
+                    <img src="pic/street-2.jpg">
+                    <p> $12000</p>
+                </div>
+                <div class="col-3">
+                    <img src="pic/street-3.jpg">
+                    <p> $13000</p>
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class="col-3">
+                    <img src="pic/street-1.jpg">
+                    <p> $13900</p>
+                </div>
+                <div class="col-3">
+                    <img src="pic/street-2.jpg">
+                    <p> $14400</p>
+                </div>
+                <div class="col-3">
+                    <img src="pic/street-3.jpg">
+                    <p> $22200</p>
+                </div>
+            </div>
+
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#8594</span>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    <footer>
+        <p> TEL: 0366666666 </p>
+        <p> ADDRESS: 清華大學 </p>
+        <p>GHOST 版權所有 © 2021</p>
+    </footer>
+
+    <!----js for toggle menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "43px";
+
+        function menutoggle(){
+            if (MenuItems.style.maxHeight =="43px"){
+                MenuItems.style.maxHeight = "0px";
+            }
+            else if (MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "300px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

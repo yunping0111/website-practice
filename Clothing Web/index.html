@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HYP Clothing </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    <div class = "shopname">
+        <h1> Ghost Shopping </h1>
+    </div>
+   
+    
+   <div class="header">
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="ghost_icon.png">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a class="active" href="#home">HOME</a></li>
+                    <li><a href="#tops">TOPS</a></li>
+                    <li><a href="#bottoms">BOTTOMS</a></li>
+                    <li><a href="dresses.html">DRESSES</a></li>
+                    <li><a href="#about">ABOUT</a> </li>
+                </ul>
+            </nav>
+            <img src="pic/cart.png" width="40px" height="40px">
+            <img src="pic/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <h2> I am the champion! </h2>
+            <p> Nine to five of the OL looking for a modern new changes, may wish to consider this knit jacket Slim popular winter</p>
+            <a href="" class="btn">Go Shopping &#8594; </a>
+        </div>
+        <div class="col-2">
+            <img src="pic/taylor.jfif">
+        </div>
+    </div>
+    </div> 
+    </div>
+
+    <!-------feature categories -------->
+    <div class = "categories">
+        <div class="small-container">
+            <h1 style="padding: 10px 100px;"> Street Style</h1>
+            <div class = "row">
+                <div class="col-3">
+                    <img src="pic/street-1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="pic/street-2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="pic/street-3.jpg">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!----------testimonial----------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>You know those funny thoughts you keep to yourself while 
+                    looking at fashion? I say them so you don't have to.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>    
+                        <i class="fa fa-star"></i>    
+                        <i class="fa fa-star-half-o"></i>    
+                        <i class="fa fa-star-o"></i>                        
+                    </div>
+                    <img src="pic/commet-1.jpg">
+                    <h3>Celebrity SESE</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Look at that toothcomb! Coquerel’s sifaka have 4 teeth in their toothcomb,
+                     a structure lemurs use to keep themselves clean and pest-free.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>    
+                        <i class="fa fa-star"></i>    
+                        <i class="fa fa-star-half-o"></i>    
+                        <i class="fa fa-star-o"></i>                        
+                    </div>
+                    <img src="pic/commet-2.jpg">
+                    <h3>Celebrity Cammm</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Animals in #Madagascar that look like famous people, continued.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>    
+                        <i class="fa fa-star"></i>    
+                        <i class="fa fa-star-half-o"></i>    
+                        <i class="fa fa-star-o"></i>                        
+                    </div>
+                    <img src="pic/commet-3.jpg">
+                    <h3>Celebrity BEANS</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> TEL: 0366666666 </p>
+        <p> ADDRESS: 清華大學 </p>
+        <p>GHOST 版權所有 © 2021</p>
+    </footer>
+
+    <!----js for toggle menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "43px";
+
+        function menutoggle(){
+            if (MenuItems.style.maxHeight =="43px"){
+                MenuItems.style.maxHeight = "0px";
+            }
+            else if (MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "300px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

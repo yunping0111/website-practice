@@ -1,0 +1,321 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Kanit', sans-serif;
+}
+
+.shopname{
+    background-color: #DDE3E5;
+    text-align: center;
+    padding: 10px;
+}
+
+.shopname h1::before{
+    content: url(ghost_icon.png);
+}
+.logo{
+    padding: 0 25px; 
+    width:40px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #8D9DB7;
+}
+
+nav{
+    flex:1;
+    text-align: center;
+}
+
+nav ul{
+    display:inline-block ;
+    list-style-type: none;
+    overflow:hidden;
+    background-color: #8D9DB7;
+    max-height: 43px;
+}
+
+nav ul li{
+    display:inline-block;
+    margin-right: 20px;
+
+}
+
+nav ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+nav ul li a:hover:not(active){
+    background-color: #667290;
+    color: white;
+}
+
+.active{
+    background-color: #2d3b5e;
+    color: white;
+}
+
+.header{
+    background: radial-gradient(#ffffff, #f5ded2);
+}
+.header .row{
+    margin-top: 80px;
+}
+.container{
+    max-width: 100%;
+    margin:auto;
+    padding: 0;
+}
+
+.row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 80px;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px;
+}
+
+.btn{
+    display: inline-block;
+    background-color:#e66c2f;
+    color:#fff; 
+    padding: 10px 40px;
+    padding: 30px 0;
+    border-radius: 30px;
+}
+.btn:hover{
+    background-color:#a33b06;
+}
+
+.categories{
+    margin:  0;
+    background-color: rgb(165, 248, 221);
+}
+
+.clothes-categories{
+    margin:  0;
+    background-image: url("pic/background.jpg");
+    background-attachment:scroll;
+    background-repeat:inherit;
+    background-blend-mode: multiply;
+}
+
+
+.col-3{
+    flex-basis:30%;
+    min-width: 250px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-3 img{
+    width: 100%;
+}
+.col-3:hover{
+    transform:  translateY(-15px);
+}
+
+.small-container{
+    max-width: 1080px;
+    margin:auto;
+    padding: 0 25px;
+}
+
+.rating .fa{
+    color:rgb(204, 33, 139);
+}
+
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-3{
+    padding-top: 40px 20px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgb(0, 0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+    height: 400px;
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-14px);
+}
+.fa .fa-quote-left{
+    font-size: 50px;
+    color:rgb(139, 47, 104);
+}
+.col-3 p{
+    font-size: small;
+    margin: 12px 20px;
+    color: #777;
+}
+.testimonial .col-3 .h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+.menu-icon{
+    width: 40px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*---------Dresses*/
+.row-2{
+    justify-content: space-between;
+    margin: 0px 50px 60px 60px;
+}
+select{
+    border: 1px solid #a33b06;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.page-btn{
+    margin: 0px 90px 30px;
+
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #2d3b5e;
+    margin-left:10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor:pointer;
+}
+.page-btn span:hover{
+    background-color:#8D9DB7;
+    color: white;
+}
+
+
+
+/*---------media query for menu-------*/
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 126px;
+        left: 0;
+        background-color: #a9b1be;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 10px 50px 10px 0;
+        width: 100%;
+    }
+    nav ul li {
+        color: white;
+    
+    }
+    .menu-icon{
+        cursor: pointer;
+        display: block;
+    }
+}
+
+/* media query for less than 400px */
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+
+    .col-2 .col-3{
+        flex-basis: 100%;
+    }
+}
+
+footer{
+    background-color: #626d86;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width:100%;
+}
+/*
+h2::before{
+    content: url(ghost_icon.png);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #8D9DB7;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+}
+
+li{
+    text-align: center;
+    float:left;
+}
+
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+li a:hover:not(active){
+    background-color: #667290;
+    color: white;
+    font-size: 120%;
+}
+
+.active{
+    background-color: #2d3b5e;
+    color: white;
+    font-size: 120%;
+}
+
+footer {
+  background-color: #626d86;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width:100%;
+}
+*/
